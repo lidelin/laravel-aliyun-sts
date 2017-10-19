@@ -1,0 +1,29 @@
+{
+    "name": "lidelin/laravel-aliyun-sts",
+    "description": "Aliyun sts for laravel 5+",
+    "keywords": ["aliyun", "sts", "oss", "laravel"],
+    "homepage": "https://github.com/lidelin/laravel-aliyun-sts",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "lidelin",
+            "email": "lidelin1023@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "LDL\\Aliyun\\Sts\\": "src",
+            "Sts\\": "src/Sts"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LDL\\Aliyun\\Sts\\Provider\\AliyunStsServiceProvider"
+            ]
+        }
+    }
+}
