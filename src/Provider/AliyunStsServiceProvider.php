@@ -14,8 +14,6 @@ class AliyunStsServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        parent::boot();
-
         $this->publishes([
             realpath(__DIR__ . '/../../config/aliyun_sts.php') => config_path('aliyun_sts.php'),
         ]);
